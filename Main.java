@@ -1,7 +1,16 @@
 package org.example;
+
 public class Main {
     public static void main(String[] args) {
-        String str = null;
-        System.out.println(str.length());
+
+
+        try {
+            String names = null;
+            System.out.println(names.length());
+
+        } catch (Exception e) {
+            System.out.println("エラーが発生しました");
+            e.printStackTrace();
+        }
     }
 }
